@@ -48,11 +48,7 @@ public class BaggageFeeCalculator {
         return total;
     }
 
-    /**
-     * Conserva compatibilidad con el nombre anterior del método.
-     *
-     * @deprecated use {@link #calcularTarifaEquipaje(double, int, Long)} instead.
-     */
+
     @Deprecated
     public double calculateFee(double weight, int bagCount, Long passengerId) {
         return calcularTarifaEquipaje(weight, bagCount, passengerId);
